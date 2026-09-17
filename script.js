@@ -60,25 +60,25 @@ document.addEventListener("DOMContentLoaded", () => {
     particlesJS("particles-js", {
       particles: {
         number: {
-          value: 45,
-          density: { enable: true, value_area: 900 }
+          value: 60,
+          density: { enable: true, value_area: 850 }
         },
         color: { value: ["#38bdf8", "#818cf8"] },
         shape: { type: "circle" },
         opacity: {
-          value: 0.35,
+          value: 0.55,
           random: true
         },
         size: {
-          value: 2,
+          value: 2.5,
           random: true
         },
         line_linked: {
           enable: true,
-          distance: 135,
+          distance: 140,
           color: "#38bdf8",
-          opacity: 0.15,
-          width: 1
+          opacity: 0.24,
+          width: 1.2
         },
         move: {
           enable: true,

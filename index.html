@@ -28,14 +28,31 @@
   <!-- Ambient Light Mesh Background -->
   <div class="ambient-glow glow-top"></div>
   <div class="ambient-glow glow-bottom"></div>
+  <div class="ambient-glow glow-accent"></div>
   <div class="bg-grid-pattern"></div>
   <div id="particles-js"></div>
 
   <!-- FLOATING NAVBAR -->
   <header class="navbar-wrapper">
     <nav id="navbar" class="floating-nav">
-      <a href="#" class="brand-logo">
-        <span class="brand-bracket">&lt;</span>Hasnain<span class="brand-accent"> /</span><span class="brand-bracket">&gt;</span>
+      <a href="#" class="brand-logo" aria-label="Muhammad Hasnain Home">
+        <div class="logo-icon-box">
+          <svg class="logo-svg" width="28" height="28" viewBox="0 0 40 40" fill="none">
+            <defs>
+              <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#38bdf8" />
+                <stop offset="100%" stop-color="#818cf8" />
+              </linearGradient>
+            </defs>
+            <path d="M11 11V29M29 11V29M11 20H29" stroke="url(#logoGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="11" cy="11" r="3" fill="#38bdf8" />
+            <circle cx="29" cy="29" r="3" fill="#818cf8" />
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-name">Hasnain<span class="logo-accent">.</span></span>
+          <span class="logo-tag">AI &bull; IOT &bull; WEB</span>
+        </div>
       </a>
 
       <ul class="nav-links">
