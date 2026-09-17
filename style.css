@@ -925,39 +925,6 @@ body {
   box-shadow: 0 6px 20px rgba(56, 189, 248, 0.5);
 }
 
-/* ===================================================================
-   GITHUB STATS SECTION
-   =================================================================== */
-.github-stats-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 25px;
-}
-
-.stats-glass-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: 18px;
-  padding: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(16px);
-  transition: var(--transition);
-}
-
-.stats-glass-card:hover {
-  border-color: var(--border-glow);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-}
-
-.stats-glass-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  display: block;
-}
 
 /* ===================================================================
    CONTACT SECTION
