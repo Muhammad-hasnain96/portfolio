@@ -5,92 +5,160 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Muhammad Hasnain - Software & Embedded Systems Engineer specializing in IoT (ESP32), Computer Vision (OpenCV), and Full-Stack Web Development.">
-  <meta name="keywords" content="Muhammad Hasnain, Embedded Systems, IoT, ESP32, Computer Vision, OpenCV, Full Stack Developer, Vue.js, Python, Flask">
+  <meta name="keywords" content="Muhammad Hasnain, Embedded Systems, IoT, ESP32, Computer Vision, OpenCV, Full Stack, Vue.js, Python, Flask">
+  
+  <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Muhammad Hasnain | Software & Embedded Systems Engineer">
   <meta property="og:description" content="Software & Embedded Systems Engineer | IoT (ESP32), Computer Vision (OpenCV) & Full-Stack Web Development.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/157948441?v=4">
   <meta property="og:type" content="website">
 
   <title>Muhammad Hasnain | Software & Embedded Systems Engineer</title>
 
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Premium Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- Ambient Light Mesh Background -->
+  <div class="ambient-glow glow-top"></div>
+  <div class="ambient-glow glow-bottom"></div>
+  <div class="bg-grid-pattern"></div>
   <div id="particles-js"></div>
 
-  <!-- NAVBAR -->
-  <nav id="navbar">
-    <a href="#" class="logo">&lt;Hasnain /&gt;</a>
-    <ul class="nav-menu">
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#github-stats" class="nav-link">Activity</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
-    <div class="nav-cta">
-      <a href="https://wa.me/923091816043" target="_blank" rel="noopener noreferrer" class="btn-sm">Let's Talk</a>
-    </div>
-  </nav>
+  <!-- FLOATING NAVBAR -->
+  <header class="navbar-wrapper">
+    <nav id="navbar" class="floating-nav">
+      <a href="#" class="brand-logo">
+        <span class="brand-bracket">&lt;</span>Hasnain<span class="brand-accent"> /</span><span class="brand-bracket">&gt;</span>
+      </a>
 
-  <!-- HERO SECTION -->
-  <header>
-    <div class="hero-badge">Welcome to my Portfolio</div>
-    <h1>Muhammad Hasnain</h1>
-    <h2 class="typing-container">
-      <span class="typing"></span><span class="cursor">&nbsp;</span>
-    </h2>
-    <p class="hero-subtitle">
-      Software & Embedded Systems Engineer bridging intelligent software, hardware interfacing, and computer vision. Experienced in building distributed IoT architectures, real-time CV pipelines, and modern web applications.
-    </p>
-    <div class="hero-actions">
-      <a href="#projects" class="btn btn-primary">View Projects</a>
-      <a href="cv.pdf" download class="btn btn-secondary">Download Resume</a>
-    </div>
-    <div class="hero-socials">
-      <a href="https://github.com/Muhammad-hasnain96" target="_blank" rel="noopener noreferrer" title="GitHub">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
-      </a>
-      <a href="https://www.linkedin.com/in/muhammad-hasnain96/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
-      </a>
-      <a href="mailto:mh.hasnain.96@gmail.com" title="Email">
-        <img src="https://img.icons8.com/color/48/gmail-new.png" alt="Email">
-      </a>
-      <a href="https://wa.me/923091816043" target="_blank" rel="noopener noreferrer" title="WhatsApp">
-        <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp">
-      </a>
-    </div>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#skills" class="nav-item">Skills</a></li>
+        <li><a href="#projects" class="nav-item">Projects</a></li>
+        <li><a href="#github-stats" class="nav-item">Activity</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/923091816043" target="_blank" rel="noopener noreferrer" class="btn-hire">
+          <span class="btn-hire-dot"></span>Let's Talk
+        </a>
+      </div>
+    </nav>
   </header>
 
-  <!-- ABOUT SECTION -->
-  <section id="about">
-    <div class="section-header">
-      <span class="section-tag">Overview</span>
-      <h2>About Me</h2>
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="hero-content">
+
+      <!-- Avatar with Pulsing Status Indicator -->
+      <div class="hero-avatar-container">
+        <div class="avatar-ring">
+          <img src="https://avatars.githubusercontent.com/u/157948441?v=4" alt="Muhammad Hasnain" class="hero-avatar">
+          <span class="live-status-dot" title="Available for hire"></span>
+        </div>
+      </div>
+
+      <!-- Opportunity Badge -->
+      <div class="status-badge">
+        <span class="pulse-radar"></span>
+        <span class="status-badge-text">Available for Opportunities</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="hero-title">Muhammad Hasnain</h1>
+
+      <!-- Code-Styled Typing Box -->
+      <div class="typing-wrapper">
+        <span class="typing-terminal-prompt">$</span>
+        <span class="typing"></span>
+        <span class="typing-cursor"></span>
+      </div>
+
+      <!-- Subtitle Description -->
+      <p class="hero-description">
+        <strong>Software & Embedded Systems Engineer</strong> building intelligent physical systems and modern web platforms. Specializing in <strong>ESP32 IoT telemetry</strong>, <strong>OpenCV computer vision pipelines</strong>, and <strong>full-stack architectures</strong>.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="hero-cta-group">
+        <a href="#projects" class="btn-glow-primary">
+          <span>Explore Projects</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a href="cv.pdf" download class="btn-glow-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download CV</span>
+        </a>
+      </div>
+
+      <!-- Crisp, High-Contrast Social Pills -->
+      <div class="social-pills-bar">
+        <a href="https://github.com/Muhammad-hasnain96" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub Profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/muhammad-hasnain96/" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn Profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#0A66C2"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://wa.me/923091816043" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="WhatsApp Chat">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366"><path d="M12.031 0C5.399 0 .018 5.38.018 12.012c0 2.118.553 4.187 1.603 6.008L0 24l6.166-1.618c1.755.957 3.738 1.463 5.865 1.463 6.634 0 12.016-5.382 12.016-12.014 0-3.208-1.25-6.223-3.518-8.494A11.94 11.94 0 0012.031 0zm.004 21.996c-1.8 0-3.565-.483-5.105-1.399l-.366-.217-3.791.995 1.012-3.694-.239-.38a9.98 9.98 0 01-1.53-5.289c0-5.524 4.494-10.018 10.024-10.018 2.678 0 5.195 1.044 7.087 2.937a9.96 9.96 0 012.933 7.083c0 5.526-4.493 10.022-10.025 10.022zm5.494-7.508c-.301-.151-1.783-.879-2.06-.98-.276-.1-.477-.151-.678.151-.2.301-.778.98-.954 1.181-.176.201-.351.226-.653.076-.301-.151-1.272-.469-2.424-1.496-.895-.798-1.5-1.784-1.676-2.085-.176-.301-.019-.464.132-.614.136-.135.301-.351.452-.527.151-.176.201-.301.301-.502.1-.201.05-.377-.025-.527-.075-.151-.678-1.633-.929-2.235-.245-.588-.493-.508-.678-.518-.176-.01-.377-.01-.578-.01-.201 0-.527.075-.803.377s-1.054 1.03-1.054 2.511c0 1.481 1.079 2.912 1.23 3.113.151.201 2.124 3.243 5.145 4.549.719.311 1.28.497 1.718.636.723.23 1.381.197 1.901.12.579-.087 1.783-.728 2.034-1.431.251-.703.251-1.306.176-1.431-.076-.125-.276-.201-.577-.352z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <a href="mailto:mh.hasnain.96@gmail.com" class="social-pill" aria-label="Email Me">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#EA4335"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+          <span>Email</span>
+        </a>
+      </div>
+
     </div>
-    <div class="about-card">
-      <div class="about-text">
-        <p>
-          I am a <strong>BS Computer Science Graduate</strong> and passionate <strong>Software & Embedded Systems Engineer</strong> driven by solving real-world challenges where physical hardware meets intelligent algorithms.
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="page-section">
+    <div class="section-badge-header">
+      <span class="badge-pill">Overview</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
+
+    <div class="glass-card about-layout">
+      <div class="about-text-content">
+        <p class="about-lead">
+          I am a <strong>BS Computer Science Graduate</strong> specializing in <strong>Embedded Systems</strong>, <strong>Computer Vision</strong>, and <strong>Full-Stack Engineering</strong>.
         </p>
         <p>
-          My work spans the design of distributed IoT sensor networks with ESP32 microcontrollers and ThingsBoard Cloud, computer vision pipelines for license plate and facial recognition with OpenCV, and full-stack applications with Vue 3, TypeScript, Python, and Flask.
+          My passion lies at the intersection of hardware and software—transforming sensor data into actionable cloud insights and building real-time vision pipelines that recognize and process live visual feeds. From programming <strong>ESP32 microcontrollers with ThingsBoard Cloud</strong> to designing <strong>ALPR & face-recognition systems in OpenCV</strong>, I focus on building reliable, performant, and scalable solutions.
         </p>
-        <div class="about-highlights">
-          <div class="highlight-item">
-            <span class="highlight-number">18+</span>
-            <span class="highlight-label">Public Repositories</span>
+
+        <!-- Metric Stat Cards -->
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <span class="metric-val">18+</span>
+            <span class="metric-title">GitHub Repos</span>
+            <span class="metric-sub">Open Source Work</span>
           </div>
-          <div class="highlight-item">
-            <span class="highlight-number">IoT & CV</span>
-            <span class="highlight-label">Core Specialization</span>
+          <div class="metric-card">
+            <span class="metric-val">ESP32</span>
+            <span class="metric-title">IoT Telemetry</span>
+            <span class="metric-sub">Hardware & Sensors</span>
           </div>
-          <div class="highlight-item">
-            <span class="highlight-number">Full-Stack</span>
-            <span class="highlight-label">Modern Web & APIs</span>
+          <div class="metric-card">
+            <span class="metric-val">OpenCV</span>
+            <span class="metric-title">Computer Vision</span>
+            <span class="metric-sub">ALPR & Biometrics</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-val">Vue / Py</span>
+            <span class="metric-title">Full-Stack</span>
+            <span class="metric-sub">Modern Web & APIs</span>
           </div>
         </div>
       </div>
@@ -98,293 +166,400 @@
   </section>
 
   <!-- SKILLS SECTION -->
-  <section id="skills">
-    <div class="section-header">
-      <span class="section-tag">Expertise</span>
-      <h2>Technical Arsenal</h2>
+  <section id="skills" class="page-section">
+    <div class="section-badge-header">
+      <span class="badge-pill">Expertise</span>
+      <h2 class="section-title">Technical Arsenal</h2>
+      <p class="section-subtitle">Categorized competencies cultivated through projects, research, and hands-on system builds.</p>
     </div>
 
-    <!-- EMBEDDED & IOT -->
-    <div class="skills-category">
-      <h3>Embedded Systems & IoT</h3>
-      <div class="skills-grid">
-        <div class="skill-item">
-          <img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="C++ logo">
-          <div class="skill-info">
-            <span class="skill-name">C / C++</span>
-            <div class="bar"><div class="progress p85"></div></div>
-          </div>
-        </div>
+    <div class="skills-categories-wrapper">
 
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/embeddedc/embeddedc-original.svg" alt="ESP32 logo">
-          <div class="skill-info">
-            <span class="skill-name">ESP32 & Microcontrollers</span>
-            <div class="bar"><div class="progress p90"></div></div>
-          </div>
+      <!-- Category 1: Embedded Systems & IoT -->
+      <div class="skills-group-card">
+        <div class="group-header">
+          <div class="group-icon">⚡</div>
+          <h3>Embedded Systems & IoT</h3>
         </div>
-
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/arduino/arduino-original.svg" alt="Arduino logo">
-          <div class="skill-info">
-            <span class="skill-name">Arduino & PlatformIO</span>
-            <div class="bar"><div class="progress p85"></div></div>
+        <div class="skills-items-grid">
+          <div class="skill-pill-card">
+            <img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="C++ logo" class="tech-icon">
+            <div class="skill-detail">
+              <span class="skill-label">C / C++</span>
+              <div class="level-meter"><div class="level-bar" style="width: 88%;"></div></div>
+            </div>
+            <span class="skill-pct">88%</span>
           </div>
-        </div>
 
-        <div class="skill-item">
-          <img src="https://img.icons8.com/fluency/48/cloud-lighting.png" alt="ThingsBoard logo">
-          <div class="skill-info">
-            <span class="skill-name">ThingsBoard Cloud & Telemetry</span>
-            <div class="bar"><div class="progress p80"></div></div>
+          <div class="skill-pill-card">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/embeddedc/embeddedc-original.svg" alt="ESP32 logo" class="tech-icon">
+            <div class="skill-detail">
+              <span class="skill-label">ESP32 & Sensors</span>
+              <div class="level-meter"><div class="level-bar" style="width: 90%;"></div></div>
+            </div>
+            <span class="skill-pct">90%</span>
+          </div>
+
+          <div class="skill-pill-card">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/arduino/arduino-original.svg" alt="Arduino logo" class="tech-icon">
+            <div class="skill-detail">
+              <span class="skill-label">Arduino & PlatformIO</span>
+              <div class="level-meter"><div class="level-bar" style="width: 85%;"></div></div>
+            </div>
+            <span class="skill-pct">85%</span>
+          </div>
+
+          <div class="skill-pill-card">
+            <img src="https://img.icons8.com/fluency/48/cloud-lighting.png" alt="ThingsBoard logo" class="tech-icon">
+            <div class="skill-detail">
+              <span class="skill-label">ThingsBoard Cloud</span>
+              <div class="level-meter"><div class="level-bar" style="width: 82%;"></div></div>
+            </div>
+            <span class="skill-pct">82%</span>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- COMPUTER VISION & AI -->
-    <div class="skills-category">
-      <h3>Computer Vision & AI</h3>
-      <div class="skills-grid">
-        <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo">
-          <div class="skill-info">
-            <span class="skill-name">Python</span>
-            <div class="bar"><div class="progress p90"></div></div>
-          </div>
+      <!-- Category 2: Computer Vision & AI -->
+      <div class="skills-group-card">
+        <div class="group-header">
+          <div class="group-icon">👁️</div>
+          <h3>Computer Vision & AI</h3>
         </div>
-
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/opencv/opencv-original.svg" alt="OpenCV logo">
-          <div class="skill-info">
-            <span class="skill-name">OpenCV</span>
-            <div class="bar"><div class="progress p85"></div></div>
+        <div class="skills-items-grid">
+          <div class="skill-pill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo" class="tech-icon">
+            <div class="skill-detail">
+              <span class="skill-label">Python</span>
+              <div class="level-meter"><div class="level-bar" style="width: 92%;"></div></div>
+            </div>
+            <span class="skill-pct">92%</span>
           </div>
-        </div>
 
-        <div class="skill-item">
-          <img src="https://img.icons8.com/ios-filled/50/artificial-intelligence.png" alt="Machine Learning icon">
-          <div class="skill-info">
-            <span class="skill-name">Machine Learning (CNNs / ALPR)</span>
-            <div class="bar"><div class="progress p80"></div></div>
+          <div class="skill-pill-card">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/opencv/opencv-original.svg" alt="OpenCV logo" class="tech-icon">
+            <div class="skill-detail">
+              <span class="skill-label">OpenCV</span>
+              <div class="level-meter"><div class="level-bar" style="width: 86%;"></div></div>
+            </div>
+            <span class="skill-pct">86%</span>
           </div>
-        </div>
 
-        <div class="skill-item">
-          <img src="https://img.icons8.com/ios-filled/50/visible.png" alt="Face Recognition icon">
-          <div class="skill-info">
-            <span class="skill-name">Facial Recognition Pipelines</span>
-            <div class="bar"><div class="progress p85"></div></div>
+          <div class="skill-pill-card">
+            <img src="https://img.icons8.com/ios-filled/50/38bdf8/artificial-intelligence.png" alt="Machine Learning icon" class="tech-icon">
+            <div class="skill-detail">
+              <span class="skill-label">ALPR & CNNs</span>
+              <div class="level-meter"><div class="level-bar" style="width: 84%;"></div></div>
+            </div>
+            <span class="skill-pct">84%</span>
           </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- FULL STACK & DATABASES -->
-    <div class="skills-category">
-      <h3>Web & Database Engineering</h3>
-      <div class="skills-grid">
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg" alt="Vue.js logo">
-          <div class="skill-info">
-            <span class="skill-name">Vue 3</span>
-            <div class="bar"><div class="progress p85"></div></div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="TypeScript logo">
-          <div class="skill-info">
-            <span class="skill-name">TypeScript / JavaScript</span>
-            <div class="bar"><div class="progress p80"></div></div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask logo">
-          <div class="skill-info">
-            <span class="skill-name">Flask & RESTful APIs</span>
-            <div class="bar"><div class="progress p85"></div></div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL logo">
-          <div class="skill-info">
-            <span class="skill-name">MySQL & Relational Modeling</span>
-            <div class="bar"><div class="progress p80"></div></div>
+          <div class="skill-pill-card">
+            <img src="https://img.icons8.com/ios-filled/50/38bdf8/visible.png" alt="Face Recognition icon" class="tech-icon">
+            <div class="skill-detail">
+              <span class="skill-label">Facial Recognition</span>
+              <div class="level-meter"><div class="level-bar" style="width: 85%;"></div></div>
+            </div>
+            <span class="skill-pct">85%</span>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- TOOLS & PLATFORMS -->
-    <div class="skills-category">
-      <h3>Tools & Workflow</h3>
-      <div class="skills-grid">
-        <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git logo">
-          <div class="skill-info">
-            <span class="skill-name">Git & Version Control</span>
-            <div class="bar"><div class="progress p85"></div></div>
-          </div>
+      <!-- Category 3: Web & Database Engineering -->
+      <div class="skills-group-card">
+        <div class="group-header">
+          <div class="group-icon">🌐</div>
+          <h3>Web & Database Engineering</h3>
         </div>
-
-        <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub logo">
-          <div class="skill-info">
-            <span class="skill-name">GitHub Collaboration</span>
-            <div class="bar"><div class="progress p85"></div></div>
+        <div class="skills-items-grid">
+          <div class="skill-pill-card">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg" alt="Vue.js logo" class="tech-icon">
+            <div class="skill-detail">
+              <span class="skill-label">Vue 3</span>
+              <div class="level-meter"><div class="level-bar" style="width: 85%;"></div></div>
+            </div>
+            <span class="skill-pct">85%</span>
           </div>
-        </div>
 
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux logo">
-          <div class="skill-info">
-            <span class="skill-name">Linux OS</span>
-            <div class="bar"><div class="progress p75"></div></div>
+          <div class="skill-pill-card">
+            <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="TypeScript logo" class="tech-icon">
+            <div class="skill-detail">
+              <span class="skill-label">TypeScript / JS</span>
+              <div class="level-meter"><div class="level-bar" style="width: 82%;"></div></div>
+            </div>
+            <span class="skill-pct">82%</span>
           </div>
-        </div>
 
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="VS Code logo">
-          <div class="skill-info">
-            <span class="skill-name">VS Code & PlatformIO</span>
-            <div class="bar"><div class="progress p90"></div></div>
+          <div class="skill-pill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask logo" class="tech-icon">
+            <div class="skill-detail">
+              <span class="skill-label">Flask REST APIs</span>
+              <div class="level-meter"><div class="level-bar" style="width: 85%;"></div></div>
+            </div>
+            <span class="skill-pct">85%</span>
+          </div>
+
+          <div class="skill-pill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL logo" class="tech-icon">
+            <div class="skill-detail">
+              <span class="skill-label">MySQL & Schemas</span>
+              <div class="level-meter"><div class="level-bar" style="width: 80%;"></div></div>
+            </div>
+            <span class="skill-pct">80%</span>
           </div>
         </div>
       </div>
+
+      <!-- Category 4: Tools & Platforms -->
+      <div class="skills-group-card">
+        <div class="group-header">
+          <div class="group-icon">🛠️</div>
+          <h3>Tools & Platforms</h3>
+        </div>
+        <div class="skills-items-grid">
+          <div class="skill-pill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git logo" class="tech-icon">
+            <div class="skill-detail">
+              <span class="skill-label">Git & Version Control</span>
+              <div class="level-meter"><div class="level-bar" style="width: 88%;"></div></div>
+            </div>
+            <span class="skill-pct">88%</span>
+          </div>
+
+          <div class="skill-pill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub logo" class="tech-icon">
+            <div class="skill-detail">
+              <span class="skill-label">GitHub Collaboration</span>
+              <div class="level-meter"><div class="level-bar" style="width: 88%;"></div></div>
+            </div>
+            <span class="skill-pct">88%</span>
+          </div>
+
+          <div class="skill-pill-card">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux logo" class="tech-icon">
+            <div class="skill-detail">
+              <span class="skill-label">Linux OS</span>
+              <div class="level-meter"><div class="level-bar" style="width: 80%;"></div></div>
+            </div>
+            <span class="skill-pct">80%</span>
+          </div>
+
+          <div class="skill-pill-card">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="VS Code logo" class="tech-icon">
+            <div class="skill-detail">
+              <span class="skill-label">VS Code & PlatformIO</span>
+              <div class="level-meter"><div class="level-bar" style="width: 90%;"></div></div>
+            </div>
+            <span class="skill-pct">90%</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- PROJECTS SECTION -->
-  <section id="projects">
-    <div class="section-header">
-      <span class="section-tag">Portfolio</span>
-      <h2>Featured Projects</h2>
+  <section id="projects" class="page-section">
+    <div class="section-badge-header">
+      <span class="badge-pill">Portfolio</span>
+      <h2 class="section-title">Featured Work</h2>
       <p class="section-subtitle">Real-world systems spanning IoT telemetry, computer vision pipelines, and full-stack web platforms.</p>
     </div>
 
-    <div class="projects-grid">
+    <div class="projects-container-grid">
 
       <!-- PROJECT 1: ESP32 Environmental System -->
-      <div class="project-card featured">
-        <div class="project-badge">Hardware & IoT</div>
-        <div class="project-body">
-          <h3>ESP32 Multi-Module Environmental System</h3>
-          <p>
-            A 3-node distributed monitoring system tracking air quality (MQ-137, CCS811), water purity (TDS & Flow), and soil/light metrics (BH1750), transmitting live telemetry to ThingsBoard Cloud.
-          </p>
-          <div class="tech-tags">
-            <span>C++</span>
-            <span>ESP32</span>
-            <span>PlatformIO</span>
-            <span>ThingsBoard</span>
-            <span>IoT</span>
+      <div class="project-showcase-card featured-project">
+        <div class="card-glow-edge"></div>
+        <div class="project-card-header">
+          <span class="project-category-tag tag-iot">IoT & Hardware</span>
+          <div class="project-external-icon">
+            <a href="https://github.com/Muhammad-hasnain96/ESP32-Multi-Module-Environmental-Monitoring-System" target="_blank" rel="noopener noreferrer" aria-label="View Repo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
           </div>
         </div>
-        <div class="project-links">
-          <a href="https://github.com/Muhammad-hasnain96/ESP32-Multi-Module-Environmental-Monitoring-System" target="_blank" rel="noopener noreferrer" class="btn-card">View Repository</a>
+
+        <h3 class="project-heading">ESP32 Multi-Module Environmental System</h3>
+        <p class="project-text">
+          A 3-node distributed monitoring system tracking air quality (MQ-137, CCS811), water purity (TDS & Flow), and soil/light metrics (BH1750), transmitting live telemetry to ThingsBoard Cloud.
+        </p>
+
+        <div class="project-tech-pills">
+          <span>C++</span>
+          <span>ESP32</span>
+          <span>PlatformIO</span>
+          <span>ThingsBoard</span>
+          <span>IoT</span>
+        </div>
+
+        <div class="project-actions-row">
+          <a href="https://github.com/Muhammad-hasnain96/ESP32-Multi-Module-Environmental-Monitoring-System" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+            <span>View Repository</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
         </div>
       </div>
 
       <!-- PROJECT 2: My-Bakery -->
-      <div class="project-card">
-        <div class="project-badge">Full-Stack Web</div>
-        <div class="project-body">
-          <h3>My-Bakery E-Commerce Platform</h3>
-          <p>
-            Modern, responsive online bakery storefront built with Vue.js, featuring dynamic catalog filtering, cart management, and seamless deployment on Vercel.
-          </p>
-          <div class="tech-tags">
-            <span>Vue 3</span>
-            <span>JavaScript</span>
-            <span>Vercel</span>
-            <span>CSS3</span>
+      <div class="project-showcase-card">
+        <div class="card-glow-edge"></div>
+        <div class="project-card-header">
+          <span class="project-category-tag tag-web">Full-Stack Web</span>
+          <div class="project-external-icon">
+            <a href="https://my-bakery-sable.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="View Live App">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
           </div>
         </div>
-        <div class="project-links">
-          <a href="https://my-bakery-sable.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-card btn-card-primary">Live Demo</a>
-          <a href="https://github.com/Muhammad-hasnain96/My-bakery" target="_blank" rel="noopener noreferrer" class="btn-card">Code</a>
+
+        <h3 class="project-heading">My-Bakery E-Commerce Platform</h3>
+        <p class="project-text">
+          Modern, responsive online bakery storefront built with Vue.js, featuring dynamic catalog filtering, cart management, and seamless production deployment on Vercel.
+        </p>
+
+        <div class="project-tech-pills">
+          <span>Vue 3</span>
+          <span>JavaScript</span>
+          <span>Vercel</span>
+          <span>CSS3</span>
+        </div>
+
+        <div class="project-actions-row">
+          <a href="https://my-bakery-sable.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-project-link btn-accent-fill">
+            <span>Live Demo</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+          <a href="https://github.com/Muhammad-hasnain96/My-bakery" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+            <span>Code</span>
+          </a>
         </div>
       </div>
 
       <!-- PROJECT 3: Vehicle Detection & ALPR -->
-      <div class="project-card">
-        <div class="project-badge">Computer Vision</div>
-        <div class="project-body">
-          <h3>Vehicle Detection & ALPR</h3>
-          <p>
-            An end-to-end computer vision pipeline executing real-time vehicle detection and Automatic License Plate Recognition (ALPR) from surveillance video streams.
-          </p>
-          <div class="tech-tags">
-            <span>Python</span>
-            <span>OpenCV</span>
-            <span>Computer Vision</span>
-            <span>Machine Learning</span>
+      <div class="project-showcase-card">
+        <div class="card-glow-edge"></div>
+        <div class="project-card-header">
+          <span class="project-category-tag tag-ai">Computer Vision</span>
+          <div class="project-external-icon">
+            <a href="https://github.com/Muhammad-hasnain96/Vehicle_detection_alpnr" target="_blank" rel="noopener noreferrer" aria-label="View Repo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
           </div>
         </div>
-        <div class="project-links">
-          <a href="https://github.com/Muhammad-hasnain96/Vehicle_detection_alpnr" target="_blank" rel="noopener noreferrer" class="btn-card">View Repository</a>
+
+        <h3 class="project-heading">Vehicle Detection & ALPR</h3>
+        <p class="project-text">
+          An end-to-end computer vision pipeline executing real-time vehicle detection and Automatic License Plate Recognition (ALPR) from surveillance video streams.
+        </p>
+
+        <div class="project-tech-pills">
+          <span>Python</span>
+          <span>OpenCV</span>
+          <span>CNNs</span>
+          <span>Computer Vision</span>
+        </div>
+
+        <div class="project-actions-row">
+          <a href="https://github.com/Muhammad-hasnain96/Vehicle_detection_alpnr" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+            <span>View Repository</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
         </div>
       </div>
 
       <!-- PROJECT 4: Face Attendance System -->
-      <div class="project-card">
-        <div class="project-badge">AI & Biometrics</div>
-        <div class="project-body">
-          <h3>Face Attendance Automation</h3>
-          <p>
-            Biometric automated attendance system utilizing deep facial encodings, live webcam facial recognition, and automated attendee logging.
-          </p>
-          <div class="tech-tags">
-            <span>Python</span>
-            <span>OpenCV</span>
-            <span>Face Recognition</span>
-            <span>Automation</span>
+      <div class="project-showcase-card">
+        <div class="card-glow-edge"></div>
+        <div class="project-card-header">
+          <span class="project-category-tag tag-ai">Biometrics & AI</span>
+          <div class="project-external-icon">
+            <a href="https://github.com/Muhammad-hasnain96/Face-attendace-system" target="_blank" rel="noopener noreferrer" aria-label="View Repo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
           </div>
         </div>
-        <div class="project-links">
-          <a href="https://github.com/Muhammad-hasnain96/Face-attendace-system" target="_blank" rel="noopener noreferrer" class="btn-card">View Repository</a>
+
+        <h3 class="project-heading">Face Attendance Automation</h3>
+        <p class="project-text">
+          Biometric automated attendance system utilizing deep facial encodings, live webcam facial recognition, and automated attendee logging.
+        </p>
+
+        <div class="project-tech-pills">
+          <span>Python</span>
+          <span>OpenCV</span>
+          <span>Facial Rec</span>
+          <span>Automation</span>
+        </div>
+
+        <div class="project-actions-row">
+          <a href="https://github.com/Muhammad-hasnain96/Face-attendace-system" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+            <span>View Repository</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
         </div>
       </div>
 
       <!-- PROJECT 5: SilkLane Clothing Store -->
-      <div class="project-card">
-        <div class="project-badge">Modern Web</div>
-        <div class="project-body">
-          <h3>SilkLane Apparel Store</h3>
-          <p>
-            Elegant Pakistani apparel retail web application built with TypeScript, featuring interactive product displays, responsive layout, and robust cart architecture.
-          </p>
-          <div class="tech-tags">
-            <span>TypeScript</span>
-            <span>Frontend</span>
-            <span>UI/UX</span>
+      <div class="project-showcase-card">
+        <div class="card-glow-edge"></div>
+        <div class="project-card-header">
+          <span class="project-category-tag tag-web">Modern Web</span>
+          <div class="project-external-icon">
+            <a href="https://github.com/Muhammad-hasnain96/SilkLane_Pakistani_clothing_shop" target="_blank" rel="noopener noreferrer" aria-label="View Repo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
           </div>
         </div>
-        <div class="project-links">
-          <a href="https://github.com/Muhammad-hasnain96/SilkLane_Pakistani_clothing_shop" target="_blank" rel="noopener noreferrer" class="btn-card">View Repository</a>
+
+        <h3 class="project-heading">SilkLane Apparel Store</h3>
+        <p class="project-text">
+          Elegant Pakistani apparel retail web application built with TypeScript, featuring interactive product displays, responsive layout, and robust cart architecture.
+        </p>
+
+        <div class="project-tech-pills">
+          <span>TypeScript</span>
+          <span>Frontend</span>
+          <span>UI/UX</span>
+        </div>
+
+        <div class="project-actions-row">
+          <a href="https://github.com/Muhammad-hasnain96/SilkLane_Pakistani_clothing_shop" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+            <span>View Repository</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
         </div>
       </div>
 
       <!-- PROJECT 6: Flask CRUD & MySQL -->
-      <div class="project-card">
-        <div class="project-badge">Backend & Database</div>
-        <div class="project-body">
-          <h3>Flask CRUD & MySQL Application</h3>
-          <p>
-            Production-structured RESTful CRUD application built using Python Flask, interfacing with a normalized MySQL database for secure record management.
-          </p>
-          <div class="tech-tags">
-            <span>Python</span>
-            <span>Flask</span>
-            <span>MySQL</span>
-            <span>REST API</span>
+      <div class="project-showcase-card">
+        <div class="card-glow-edge"></div>
+        <div class="project-card-header">
+          <span class="project-category-tag tag-backend">Backend & DB</span>
+          <div class="project-external-icon">
+            <a href="https://github.com/Muhammad-hasnain96/Flask-CRUD-Application-using-MySQL" target="_blank" rel="noopener noreferrer" aria-label="View Repo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
           </div>
         </div>
-        <div class="project-links">
-          <a href="https://github.com/Muhammad-hasnain96/Flask-CRUD-Application-using-MySQL" target="_blank" rel="noopener noreferrer" class="btn-card">View Repository</a>
+
+        <h3 class="project-heading">Flask CRUD & MySQL Application</h3>
+        <p class="project-text">
+          Production-structured RESTful CRUD application built using Python Flask, interfacing with a normalized MySQL database for secure record management.
+        </p>
+
+        <div class="project-tech-pills">
+          <span>Python</span>
+          <span>Flask</span>
+          <span>MySQL</span>
+          <span>REST API</span>
+        </div>
+
+        <div class="project-actions-row">
+          <a href="https://github.com/Muhammad-hasnain96/Flask-CRUD-Application-using-MySQL" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+            <span>View Repository</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
         </div>
       </div>
 
@@ -392,66 +567,85 @@
   </section>
 
   <!-- GITHUB ACTIVITY & METRICS -->
-  <section id="github-stats">
-    <div class="section-header">
-      <span class="section-tag">Activity</span>
-      <h2>GitHub Metrics</h2>
+  <section id="github-stats" class="page-section">
+    <div class="section-badge-header">
+      <span class="badge-pill">Metrics</span>
+      <h2 class="section-title">GitHub Activity</h2>
       <p class="section-subtitle">Real-time statistics fetched directly from GitHub</p>
     </div>
 
-    <div class="github-stats-container">
-      <div class="stats-card">
+    <div class="github-stats-wrapper">
+      <div class="stats-glass-card">
         <img src="https://github-readme-stats.vercel.app/api?username=Muhammad-hasnain96&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Muhammad Hasnain's GitHub Stats" loading="lazy">
       </div>
-      <div class="stats-card">
+      <div class="stats-glass-card">
         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Muhammad-hasnain96&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" loading="lazy">
       </div>
     </div>
   </section>
 
   <!-- CONTACT SECTION -->
-  <section id="contact">
-    <div class="section-header">
-      <span class="section-tag">Get in Touch</span>
-      <h2>Contact Me</h2>
-      <p class="section-subtitle">Interested in collaborating or discussing an opportunity? Feel free to reach out.</p>
+  <section id="contact" class="page-section">
+    <div class="section-badge-header">
+      <span class="badge-pill">Connect</span>
+      <h2 class="section-title">Let's Build Together</h2>
+      <p class="section-subtitle">Open for Software Engineering, Embedded Systems, and Computer Vision opportunities.</p>
     </div>
 
-    <div class="contact-container">
-      <div class="contact-card">
-        <div class="contact-icon">✉️</div>
-        <h3>Email</h3>
-        <p>mh.hasnain.96@gmail.com</p>
-        <a href="mailto:mh.hasnain.96@gmail.com" class="contact-btn">Send Email</a>
+    <div class="contact-grid">
+      
+      <!-- Email Card -->
+      <div class="contact-box-card">
+        <div class="contact-icon-bubble">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </div>
+        <h3 class="contact-box-title">Email</h3>
+        <p class="contact-box-info">mh.hasnain.96@gmail.com</p>
+        <a href="mailto:mh.hasnain.96@gmail.com" class="btn-contact-action">Send Message</a>
       </div>
 
-      <div class="contact-card">
-        <div class="contact-icon">💬</div>
-        <h3>WhatsApp / Phone</h3>
-        <p>+92 309 1816043</p>
-        <a href="https://wa.me/923091816043" target="_blank" rel="noopener noreferrer" class="contact-btn">Chat on WhatsApp</a>
+      <!-- WhatsApp Card -->
+      <div class="contact-box-card highlight-contact">
+        <div class="contact-icon-bubble wa-bubble">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 0C5.399 0 .018 5.38.018 12.012c0 2.118.553 4.187 1.603 6.008L0 24l6.166-1.618c1.755.957 3.738 1.463 5.865 1.463 6.634 0 12.016-5.382 12.016-12.014 0-3.208-1.25-6.223-3.518-8.494A11.94 11.94 0 0012.031 0zm.004 21.996c-1.8 0-3.565-.483-5.105-1.399l-.366-.217-3.791.995 1.012-3.694-.239-.38a9.98 9.98 0 01-1.53-5.289c0-5.524 4.494-10.018 10.024-10.018 2.678 0 5.195 1.044 7.087 2.937a9.96 9.96 0 012.933 7.083c0 5.526-4.493 10.022-10.025 10.022zm5.494-7.508c-.301-.151-1.783-.879-2.06-.98-.276-.1-.477-.151-.678.151-.2.301-.778.98-.954 1.181-.176.201-.351.226-.653.076-.301-.151-1.272-.469-2.424-1.496-.895-.798-1.5-1.784-1.676-2.085-.176-.301-.019-.464.132-.614.136-.135.301-.351.452-.527.151-.176.201-.301.301-.502.1-.201.05-.377-.025-.527-.075-.151-.678-1.633-.929-2.235-.245-.588-.493-.508-.678-.518-.176-.01-.377-.01-.578-.01-.201 0-.527.075-.803.377s-1.054 1.03-1.054 2.511c0 1.481 1.079 2.912 1.23 3.113.151.201 2.124 3.243 5.145 4.549.719.311 1.28.497 1.718.636.723.23 1.381.197 1.901.12.579-.087 1.783-.728 2.034-1.431.251-.703.251-1.306.176-1.431-.076-.125-.276-.201-.577-.352z"/></svg>
+        </div>
+        <h3 class="contact-box-title">WhatsApp / Phone</h3>
+        <p class="contact-box-info">+92 309 1816043</p>
+        <a href="https://wa.me/923091816043" target="_blank" rel="noopener noreferrer" class="btn-contact-action btn-wa-action">Chat on WhatsApp</a>
       </div>
 
-      <div class="contact-card">
-        <div class="contact-icon">💼</div>
-        <h3>LinkedIn</h3>
-        <p>Connect professionally</p>
-        <a href="https://www.linkedin.com/in/muhammad-hasnain96/" target="_blank" rel="noopener noreferrer" class="contact-btn">View Profile</a>
+      <!-- LinkedIn Card -->
+      <div class="contact-box-card">
+        <div class="contact-icon-bubble in-bubble">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </div>
+        <h3 class="contact-box-title">LinkedIn</h3>
+        <p class="contact-box-info">Muhammad Hasnain</p>
+        <a href="https://www.linkedin.com/in/muhammad-hasnain96/" target="_blank" rel="noopener noreferrer" class="btn-contact-action">Connect Profile</a>
       </div>
 
-      <div class="contact-card">
-        <div class="contact-icon">💻</div>
-        <h3>GitHub</h3>
-        <p>Explore 18+ repos</p>
-        <a href="https://github.com/Muhammad-hasnain96" target="_blank" rel="noopener noreferrer" class="contact-btn">Follow on GitHub</a>
+      <!-- GitHub Card -->
+      <div class="contact-box-card">
+        <div class="contact-icon-bubble gh-bubble">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </div>
+        <h3 class="contact-box-title">GitHub</h3>
+        <p class="contact-box-info">@Muhammad-hasnain96</p>
+        <a href="https://github.com/Muhammad-hasnain96" target="_blank" rel="noopener noreferrer" class="btn-contact-action">Follow on GitHub</a>
       </div>
+
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© <span id="year">2026</span> Muhammad Hasnain. Built with passion for Embedded Systems & AI.</p>
-    <a href="#" class="back-to-top">↑ Back to Top</a>
+  <!-- MODERN MINIMAL FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© <span id="year">2026</span> Muhammad Hasnain. Built with high performance & modern engineering.</p>
+      <a href="#" class="back-top-pill">
+        <span>Back to Top</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+      </a>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
